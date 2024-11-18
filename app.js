@@ -1,5 +1,10 @@
 // console.log('express-blog-intro')
 
+// importo l'array di oggetti
+const blogPosts = require('./blog-posts.js')
+// console.log(blogPosts)
+
+// importo express
 const express = require('express')
 const app = express()
 const port = 3000
