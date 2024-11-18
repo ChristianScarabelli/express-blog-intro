@@ -14,7 +14,7 @@ app.use(express.static('images'))
 
 // creo la rotta principale del mio server
 app.get('/', (req, res) => {
-    res.send('Server del mio blog')
+    res.send('Server del mio blog')   // con Axios res.data per avere i dati 
 })
 
 // creo la rotta bacheca che mi stampi in pagina il json dei post
