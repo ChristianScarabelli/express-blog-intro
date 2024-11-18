@@ -19,7 +19,10 @@ app.get('/', (req, res) => {
 
 // creo la rotta bacheca che mi stampi in pagina il json dei post
 app.get('/bacheca', (req, res) => {
-    res.json(blogPosts)
+    res.json({                      // restituisco un json  
+        posts: blogPosts,           // array dei post
+        count: blogPosts.length     // conteggio dei post (lunghezza dell'array)
+    })
 })
 
 // inizializzo il server
