@@ -10,7 +10,7 @@ const app = express()
 const port = 3000
 
 // rendo accessibile al server la cartella images 
-app.use(express.static('images')) // images è la cartella radice dei file statici/accessibili, quindi nel path non vieen contata, si parte da quella
+app.use(express.static('public')) // images è la cartella radice dei file statici/accessibili, quindi nel path non vieen contata, si parte da quella
 
 // creo la rotta principale del mio server
 app.get('/', (req, res) => {
